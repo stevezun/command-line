@@ -10,9 +10,9 @@ public class CommandLine {
 
   public static void main(String[] args) {
     Double[] data = read();
-    System.out.println( Arrays.toString(data));
+    System.out.printf("Input values: %s%n", Arrays.toString(data));
     double total = sum(data);
-    System.out.println( total );
+    System.out.printf( "Sum: %,.2f%n",total );
   }
 
   private static int[] parse(String[] args) {
